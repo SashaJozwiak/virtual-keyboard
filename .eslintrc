@@ -1,0 +1,48 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "extends": "airbnb-base",
+    "rules": {
+        /* "linebreak-style": [
+            "error",
+            "windows" 
+        ], */
+        // WARNING! если выдает много ошибок из-за пробелов (LF/CRLF), 
+        //можно раскомментировать правило выше, и закомментировать следующее "linebreak-style"
+        // Эти комментарии оставлены только для удобства проверки, в ТЗ указано, что LF/CRLF ошибки не учитываем
+        "linebreak-style": [
+            "error', 'unix"
+        ],
+        "max-len": [
+            "error",
+            100,
+            2,
+            {
+                "ignoreUrls": true
+            }
+        ],
+        "no-console": [
+            "error",
+            {
+                "allow": [
+                    "warn",
+                    "error"
+                ]
+            }
+        ],
+        "no-alert": "error",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "always"
+            }
+        ]
+    }
+}
