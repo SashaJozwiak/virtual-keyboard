@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background-color: aliceblue;
+}
+
+input,
+textarea {
+    font-family: inherit;
+    background-color: white;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+small {
+    font-size: 80%;
+}
+
+textarea {
+    overflow: auto;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.container .title {
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: gray;
+}
+
+.container .textarea {
+    margin: 0 auto;
+    padding: 5px;
+    width: 685px;
+    height: 160px;
+    border: solid 2px gray;
+    border-radius: 3px;
+    resize: none;
+    display: block;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+.container .keyboard {
+    margin: 0 auto;
+    width: 685px;
+    height: 235px;
+    border: solid 2px rgba(0, 10, 10, 0.2);
+    box-shadow: 3px -2px 10px 1px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 5px;
+}
+
+.keyboard {
+    background-color: #e4e9ed;
+}
+
+.container .keyboard .key {
+    padding-top: 12px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 5px;
+    -webkit-transition: 0.3s;
+    transition: 0.05s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 1px -1px 1px 5px rgba(0, 0, 0, .03);
+}
+
+.container .keyboard .key:hover {
+    background: #c5c5c5;
+}
+
+.container .keyboard .key.active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: #c5c5c5;
+}
+
+.container .keyboard .Backspace,
+.container .keyboard .CapsLock,
+.container .keyboard .Enter,
+.container .keyboard .ShiftLeft,
+.container .keyboard .ShiftRight {
+    width: 85px;
+    background-color: white
+}
+
+.container .keyboard .Space {
+    width: 310px;
+    background-color: white;
+
+}
+
+.container .description {
+    text-align: center;
+    margin: 20px 0;
+
+}
